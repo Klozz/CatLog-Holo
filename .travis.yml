@@ -14,3 +14,10 @@ android:
     - extra-google-m2repository
 
 
+before_script:
+  - chmod +x gradlew
+  
+  # Enable caching to speed up the build
+cache:
+  directories:
+    - $HOME/.gradle
